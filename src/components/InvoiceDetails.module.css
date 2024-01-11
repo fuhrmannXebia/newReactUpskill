@@ -1,0 +1,19 @@
+.invoiceDetailsWrapper {
+    outline: 3px solid purple;
+
+}
+
+.invoiceDetailsTop {
+
+    width: 100%;
+    outline: 3px solid greenyellow;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 40px;
+    text-align: center;
+}
+
+.invoiceDetailsTop input {
+    height: 2em;
+}

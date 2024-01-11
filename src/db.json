@@ -1,0 +1,158 @@
+{
+  "invoices": [
+    {
+      "invoiceNumber": "1234234",
+      "createdDate": null,
+      "validUntilDate": null,
+      "items": [
+        {
+          "name": "",
+          "amount": 1,
+          "tax": 0,
+          "price": 0
+        }
+      ],
+      "sender": {
+        "companyName": "",
+        "city": "",
+        "street": "",
+        "postCode": "",
+        "nip": "",
+        "tel": "",
+        "email": "",
+        "bankAccount": ""
+      },
+      "receiver": {
+        "companyName": "",
+        "city": "",
+        "street": "",
+        "postCode": "",
+        "nip": "",
+        "tel": "",
+        "email": "",
+        "bankAccount": ""
+      },
+      "id": 2
+    },
+    {
+      "invoiceNumber": "457888888000",
+      "createdDate": "2024-01-02T23:00:00.000Z",
+      "validUntilDate": "2024-01-18T23:00:00.000Z",
+      "items": [
+        {
+          "name": "testtesttesttest",
+          "amount": 1,
+          "tax": 0,
+          "price": 0
+        },
+        {
+          "name": "testtesttesttesttesttest",
+          "amount": 1,
+          "tax": 0,
+          "price": 0
+        }
+      ],
+      "sender": {
+        "companyName": "test",
+        "city": "test",
+        "street": "test",
+        "postCode": "test",
+        "nip": "test",
+        "tel": "test",
+        "email": "test@",
+        "bankAccount": "test"
+      },
+      "receiver": {
+        "companyName": "",
+        "city": "",
+        "street": "",
+        "postCode": "",
+        "nip": "",
+        "tel": "",
+        "email": "",
+        "bankAccount": ""
+      },
+      "id": 3
+    },
+    {
+      "invoiceNumber": "234234234234",
+      "createdDate": null,
+      "validUntilDate": null,
+      "items": [
+        {
+          "name": "testetstewst",
+          "amount": 1,
+          "tax": 0,
+          "price": 0
+        },
+        {
+          "name": "teststst",
+          "amount": 1,
+          "tax": 0,
+          "price": 0
+        }
+      ],
+      "sender": {
+        "companyName": "234234",
+        "city": "234",
+        "street": "",
+        "postCode": "",
+        "nip": "",
+        "tel": "234234",
+        "email": "",
+        "bankAccount": "234234234"
+      },
+      "receiver": {
+        "companyName": "",
+        "city": "",
+        "street": "",
+        "postCode": "",
+        "nip": "234234",
+        "tel": "",
+        "email": "",
+        "bankAccount": "234234"
+      },
+      "id": 4
+    },
+    {
+      "invoiceNumber": "test",
+      "createdDate": null,
+      "validUntilDate": null,
+      "items": [
+        {
+          "name": "",
+          "amount": 1,
+          "tax": 0,
+          "price": 0
+        },
+        {
+          "name": "",
+          "amount": 1,
+          "tax": 0,
+          "price": 0
+        }
+      ],
+      "sender": {
+        "companyName": "",
+        "city": "",
+        "street": "",
+        "postCode": "",
+        "nip": "",
+        "tel": "",
+        "email": "",
+        "bankAccount": ""
+      },
+      "receiver": {
+        "companyName": "",
+        "city": "",
+        "street": "",
+        "postCode": "",
+        "nip": "",
+        "tel": "",
+        "email": "",
+        "bankAccount": ""
+      },
+      "id": 5
+    }
+  ]
+}
