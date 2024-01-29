@@ -11,10 +11,24 @@ import SaveIcon from "@mui/icons-material/Save";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import ROUTES from "../routes";
 
+const defaultContactInfo = {
+  companyName: "",
+  city: "",
+  street: "",
+  postCode: "",
+  nip: "",
+  tel: "",
+  email: "",
+  bankAccount: "",
+};
+
 const InvoiceForm = () => {
   const { invoiceId } = useParams();
   const navigate = useNavigate();
   const isEditing = invoiceId != null;
+
+
+
   const form = useForm({
     defaultValues: {
       invoiceNumber: "",
@@ -28,26 +42,8 @@ const InvoiceForm = () => {
           price: 0,
         },
       ],
-      sender: {
-        companyName: "",
-        city: "",
-        street: "",
-        postCode: "",
-        nip: "",
-        tel: "",
-        email: "",
-        bankAccount: "",
-      },
-      receiver: {
-        companyName: "",
-        city: "",
-        street: "",
-        postCode: "",
-        nip: "",
-        tel: "",
-        email: "",
-        bankAccount: "",
-      },
+      sender: { ...defaultContactInfo },
+      receiver: { ...defaultContactInfo },
     },
   });
 
@@ -82,7 +78,7 @@ const InvoiceForm = () => {
     control,
     name: "items",
   });
-
+  
   useEffect(() => {
     if (isEditing) {
       const fetchExistingInvoice = async (id) => {
@@ -103,29 +99,11 @@ const InvoiceForm = () => {
         createdDate: null,
         validUntilDate: null,
         items: [{ name: "", amount: 1, tax: 0, price: 0 }],
-        sender: {
-          companyName: "",
-          city: "",
-          street: "",
-          postCode: "",
-          nip: "",
-          tel: "",
-          email: "",
-          bankAccount: "",
-        },
-        receiver: {
-          companyName: "",
-          city: "",
-          street: "",
-          postCode: "",
-          nip: "",
-          tel: "",
-          email: "",
-          bankAccount: "",
-        },
+        sender: { ...defaultContactInfo },
+        receiver: { ...defaultContactInfo },
       });
     }
-  }, [isEditing, invoiceId, reset]);
+  }, [isEditing, invoiceId,  reset]);
   return (
     <div className={styles.formContainer}>
       <FormProvider {...form}>
