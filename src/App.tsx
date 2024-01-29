@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css'
-import InvoiceList from './components/InvoiceList';
+import InvoiceList from './components/InvoiceListComponent/InvoiceList';
 import InvoiceForm from './components/InvoiceForm';
 import Header from './components/Header';
 import { LocalizationProvider } from '@mui/x-date-pickers';

@@ -1,25 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { Invoice } from "./models/invoice";
-import { fetchInvoices, deleteInvoice } from "../services/api";
+import React from "react";
+import { deleteInvoice } from "../../services/api";
 import styles from './InvoiceList.module.css'
-import InvoiceItem from "./InvoiceItem";
+import InvoiceItem from "../InvoiceItem";
+import useGetInvoices from "./useGetInvoices";
 
 
 const InvoiceList: React.FC = () => {
-  const [invoices, setInvoices] = useState<Invoice[]>([]);
-
-  useEffect(() => {
-    const getInvoices = async () => {
-      try {
-        const data = await fetchInvoices();
-        setInvoices(data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    getInvoices();
-  }, []);
+  const [invoices, setInvoices] = useGetInvoices();
 
   const handleDelete = async(id: number) => {
     await deleteInvoice(id);
