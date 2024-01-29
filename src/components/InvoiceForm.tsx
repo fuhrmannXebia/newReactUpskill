@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./InvoiceForm.module.css";
 import { postInvoice, fetchInvoice, updateInvoice } from "../services/api";
-import ContactInfo from "./ContactInfo";
+import ContactInfo from "./ContactInfoComponent/ContactInfo";
 import { useForm, useFieldArray, FormProvider } from "react-hook-form";
 import { TextField, Button } from "@mui/material";
 import { DevTool } from "@hookform/devtools";
