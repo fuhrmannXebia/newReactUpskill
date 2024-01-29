@@ -8,11 +8,12 @@ import { DevTool } from "@hookform/devtools";
 import InvoiceProductItem from "./InvoiceProductItem";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import SaveIcon from "@mui/icons-material/Save";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import ROUTES from "../routes";
 
 const InvoiceForm = () => {
   const { invoiceId } = useParams();
+  const navigate = useNavigate();
   const isEditing = invoiceId != null;
   const form = useForm({
     defaultValues: {
@@ -71,6 +72,7 @@ const InvoiceForm = () => {
         const response = await postInvoice(data);
         console.log("Invoice saved", response);
       }
+      navigate(ROUTES.HOME);
     } catch (error) {
       console.error("Error saving the invoice", error);
     }
