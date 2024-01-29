@@ -5,7 +5,7 @@ import ContactInfo from "./ContactInfoComponent/ContactInfo";
 import { useForm, useFieldArray, FormProvider } from "react-hook-form";
 import { TextField, Button } from "@mui/material";
 import { DevTool } from "@hookform/devtools";
-import InvoiceProductItem from "./InvoiceProductItem";
+import InvoiceProductItem from "./InvoiceProductItemComponent/InvoiceProductItem";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import SaveIcon from "@mui/icons-material/Save";
 import { Link, useNavigate, useParams } from "react-router-dom";

@@ -10,6 +10,12 @@
           "amount": 1,
           "tax": 0,
           "price": 0
+        },
+        {
+          "name": "",
+          "amount": "122",
+          "tax": "02",
+          "price": 0
         }
       ],
       "sender": {
