@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./InvoiceForm.module.css";
 import { postInvoice, fetchInvoice, updateInvoice } from "../services/api";
 import ContactInfo from "./ContactInfoComponent/ContactInfo";
@@ -25,9 +25,8 @@ const defaultContactInfo = {
 const InvoiceForm = () => {
   const { invoiceId } = useParams();
   const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(false);
   const isEditing = invoiceId != null;
-
-
 
   const form = useForm({
     defaultValues: {
@@ -60,6 +59,8 @@ const InvoiceForm = () => {
   const { errors } = formState;
 
   const onSubmit = async (data: unknown) => {
+    setIsLoading(true);
+    setTimeout(() => {}, 1000)
     try {
       if (isEditing) {
         const response = await updateInvoice(invoiceId, data);
@@ -68,9 +69,13 @@ const InvoiceForm = () => {
         const response = await postInvoice(data);
         console.log("Invoice saved", response);
       }
-      navigate(ROUTES.HOME);
     } catch (error) {
       console.error("Error saving the invoice", error);
+    } finally {
+      setTimeout(() => {
+        setIsLoading(false); 
+        navigate(ROUTES.HOME);
+      }, 1000);
     }
   };
 
@@ -145,7 +150,7 @@ const InvoiceForm = () => {
                 </Button>
               </Link>
 
-              <Button type="submit" variant="contained" color="primary">
+              <Button type="submit" variant="contained" color="primary" disabled={isLoading}>
                 <SaveIcon className={styles.saveIconSpacing} />
                 Save
               </Button>

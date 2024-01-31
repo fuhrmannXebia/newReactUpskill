@@ -7,7 +7,6 @@ import { TextField } from "@mui/material";
 import { formFieldsConfig } from './ContactInfoFieldsConfig'; // Update the path as necessary
 
 function getNestedError(errors, path) {
-  console.log('PATH:', path, errors);
   return path.split('.').reduce((acc, segment) => acc?.[segment], errors);
 }
 
@@ -25,6 +24,7 @@ const ContactInfo = ({ type }) => {
 
     return (
       <TextField
+        key={fieldName}
         {...register(fieldName, validation)}
         label={label}
         id={id}

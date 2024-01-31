@@ -19,7 +19,7 @@
         }
       ],
       "sender": {
-        "companyName": "",
+        "companyName": "111",
         "city": "",
         "street": "",
         "postCode": "",
@@ -82,8 +82,8 @@
     },
     {
       "invoiceNumber": "234234234234",
-      "createdDate": null,
-      "validUntilDate": null,
+      "createdDate": "1970-01-01T00:00:00.000Z",
+      "validUntilDate": "1970-01-01T00:00:00.000Z",
       "items": [
         {
           "name": "testetstewst",
@@ -105,7 +105,7 @@
         "postCode": "",
         "nip": "",
         "tel": "234234",
-        "email": "",
+        "email": "123@EWRW.DC",
         "bankAccount": "234234234"
       },
       "receiver": {
@@ -115,7 +115,7 @@
         "postCode": "",
         "nip": "234234",
         "tel": "",
-        "email": "",
+        "email": "123@EWRW.DC",
         "bankAccount": "234234"
       },
       "id": 4
