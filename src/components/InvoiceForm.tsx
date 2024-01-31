@@ -10,6 +10,7 @@ import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import SaveIcon from "@mui/icons-material/Save";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import ROUTES from "../routes";
+import { routes } from "../routes.config";
 
 const defaultContactInfo = {
   companyName: "",
@@ -74,7 +75,7 @@ const InvoiceForm = () => {
     } finally {
       setTimeout(() => {
         setIsLoading(false); 
-        navigate(ROUTES.HOME);
+        navigate(routes[0].path);
       }, 1000);
     }
   };
@@ -144,7 +145,7 @@ const InvoiceForm = () => {
               </div>
             </div>
             <div className={styles.topButtons}>
-              <Link to={ROUTES.HOME}>
+              <Link to={routes[0].path}>
                 <Button variant="outlined" color="secondary">
                   Cancel
                 </Button>

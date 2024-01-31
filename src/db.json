@@ -159,40 +159,6 @@
         "bankAccount": ""
       },
       "id": 5
-    },
-    {
-      "invoiceNumber": "Navigation test",
-      "createdDate": null,
-      "validUntilDate": null,
-      "items": [
-        {
-          "name": "",
-          "amount": 1,
-          "tax": 0,
-          "price": 0
-        }
-      ],
-      "sender": {
-        "companyName": "",
-        "city": "",
-        "street": "",
-        "postCode": "",
-        "nip": "",
-        "tel": "",
-        "email": "Nav@afd.co",
-        "bankAccount": ""
-      },
-      "receiver": {
-        "companyName": "",
-        "city": "",
-        "street": "",
-        "postCode": "",
-        "nip": "",
-        "tel": "",
-        "email": "Nav@afd.co",
-        "bankAccount": ""
-      },
-      "id": 6
     }
   ]
 }

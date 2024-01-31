@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import styles from './Header.module.css'
-import ROUTES from '../routes'
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from "./LanguageSwitcher";
+import { routes } from "../routes.config";
 
 
 const Header: React.FC = () => {
@@ -10,12 +10,13 @@ const Header: React.FC = () => {
 
   return (
     <div className={styles.header}>
-      <Link to={ROUTES.HOME}>
-        <button className={styles.headerButton}>{t('invoices')}</button>
-      </Link>
-      <Link to={ROUTES.NEW_INVOICE}>
-        <button className={styles.headerButton}>{t('addNewInvoice')}</button>
-      </Link>
+      {routes.filter(route => route.isInMenu).map((route, index) => (
+        <Link key={index} to={route.path}>
+          <button className={styles.headerButton}>
+            {t(route.translationKey)} 
+          </button>
+        </Link>
+      ))}
       <LanguageSwitcher />
     </div>
   );

@@ -1,13 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css'
-import InvoiceList from './components/InvoiceListComponent/InvoiceList';
-import InvoiceForm from './components/InvoiceForm';
 import Header from './components/Header';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'
-import ROUTES from './routes';
-
+import { routes } from './routes.config';
 
 function App() {
 
@@ -16,9 +13,9 @@ function App() {
    <Router>
     <Header />
      <Routes>
-        <Route path={ROUTES.HOME} element={<InvoiceList />} />
-        <Route path={ROUTES.NEW_INVOICE} element={<InvoiceForm />} />
-        <Route path={ROUTES.INVOICE} element={<InvoiceForm />} />
+     {routes.map((route, index) => (
+        <Route key={index} path={route.path} element={route.element} />
+      ))}
       </Routes>
    </Router>
    </LocalizationProvider>
