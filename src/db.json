@@ -119,46 +119,6 @@
         "bankAccount": "234234"
       },
       "id": 4
-    },
-    {
-      "invoiceNumber": "test",
-      "createdDate": null,
-      "validUntilDate": null,
-      "items": [
-        {
-          "name": "",
-          "amount": 1,
-          "tax": 0,
-          "price": 0
-        },
-        {
-          "name": "",
-          "amount": 1,
-          "tax": 0,
-          "price": 0
-        }
-      ],
-      "sender": {
-        "companyName": "",
-        "city": "",
-        "street": "",
-        "postCode": "",
-        "nip": "",
-        "tel": "",
-        "email": "",
-        "bankAccount": ""
-      },
-      "receiver": {
-        "companyName": "",
-        "city": "",
-        "street": "",
-        "postCode": "",
-        "nip": "",
-        "tel": "",
-        "email": "",
-        "bankAccount": ""
-      },
-      "id": 5
     }
   ]
 }

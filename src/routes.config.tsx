@@ -1,5 +1,5 @@
 import InvoiceList from './components/InvoiceListComponent/InvoiceList';
-import InvoiceForm from './components/InvoiceForm';
+import InvoiceForm from './components/InvoiceFormComponent/InvoiceForm';
 
 export const routes = [
   {

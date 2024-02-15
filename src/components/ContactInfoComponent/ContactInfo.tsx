@@ -1,22 +1,21 @@
-import React from "react";
 import styles from "./ContactInfo.module.css";
 import { useFormContext } from "react-hook-form";
 import { TextField } from "@mui/material";
 
-// Assuming formFieldsConfig is imported from another file
-import { formFieldsConfig } from "./ContactInfoFieldsConfig"; // Update the path as necessary
+import { formFieldsConfig } from "./ContactInfoFieldsConfig"; 
+import { ContactInfoProps, FieldConfig } from "./ContactInfo.models";
 
 function getNestedError(errors, path) {
   return path.split(".").reduce((acc, segment) => acc?.[segment], errors);
 }
 
-const ContactInfo = ({ type }) => {
+const ContactInfo: React.FC<ContactInfoProps> = ({ type }) => {
   const {
     register,
     formState: { errors },
   } = useFormContext();
 
-  const renderTextField = (fieldConfig) => {
+  const renderTextField = (fieldConfig: FieldConfig) => {
     const { id, label, variant, InputLabelProps, validation } = fieldConfig;
     const fieldName = `${type}.${id}`;
     const isError = getNestedError(errors, fieldName);
@@ -46,7 +45,9 @@ const ContactInfo = ({ type }) => {
   return (
     <div className={styles.contactInfoContainer}>
       <h1>{componentHeader}</h1>
-      {formFieldsConfig.map((fieldConfig) => renderTextField(fieldConfig))}
+      {formFieldsConfig.map((fieldConfig) => {
+        console.log(fieldConfig)
+        return renderTextField(fieldConfig)})}
     </div>
   );
 };

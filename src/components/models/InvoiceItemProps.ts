@@ -11,14 +11,14 @@ export interface InvoiceItemProps {
     onDelete: (id: number) => void; 
   }
 
-  interface InvoiceItem {
+  export interface InvoiceItem {
     amount: number;
     name: string;
     price: number;
     tax: number;
   }
   
-  interface ContactInfo {
+  export interface ContactInfo {
     bankAccount: string;
     city: string;
     companyName: string;

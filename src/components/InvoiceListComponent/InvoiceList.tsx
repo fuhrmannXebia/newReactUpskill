@@ -1,17 +1,11 @@
 import React from "react";
-import { deleteInvoice } from "../../services/api";
 import styles from './InvoiceList.module.css'
 import InvoiceItem from "../InvoiceItem";
 import useGetInvoices from "./useGetInvoices";
 
-
 const InvoiceList: React.FC = () => {
-  const [invoices, setInvoices] = useGetInvoices();
+  const [invoices, handleDelete] = useGetInvoices();
 
-  const handleDelete = async(id: number) => {
-    await deleteInvoice(id);
-    setInvoices(invoices.filter((invoice) => invoice.id !== id));
-  }
   return (
     <div className={styles.invoiceListContainer}>
       <div className={styles.invoiceTableHeader}>
