@@ -1,0 +1,9 @@
+.contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nameInput {
+    width: 50%;
+}

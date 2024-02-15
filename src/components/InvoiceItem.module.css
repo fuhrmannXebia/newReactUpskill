@@ -1,0 +1,37 @@
+.itemContainer {
+  height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem; 
+    border-bottom: 2px solid #dee2e6; 
+    font-weight: 500;
+  }
+  
+  .itemContainer div {
+    text-align: left;
+    flex: 1; 
+  }
+  
+  .itemContainer div:first-child {
+    padding-left: 1rem;
+  }
+  
+  .itemContainer div:last-child {
+    flex: 0 0 120px;
+    padding-right: 1rem; 
+  }
+
+  .iconButton {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .iconsContainer {
+    display: flex;
+    gap: 30px;
+  }

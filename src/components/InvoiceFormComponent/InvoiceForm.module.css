@@ -1,0 +1,73 @@
+.formContainer {
+    /* outline: 4px solid aquamarine; */
+    font-size: 2em;
+    margin: 70px 40px;
+}
+
+.invoiceFormTop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    ;
+}
+
+.productItemsContainer {
+    margin-top: 30px;
+    width: 100%;
+
+}
+
+.invoiceFormTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 20px;
+    /* outline: rebeccapurple 3px solid; */
+}
+
+.invoiceNumber {
+    width: 100%;
+}
+
+.datesContainer {
+    display: flex;
+    gap: 10px;
+
+}
+
+.datePicker {
+    flex: 1;
+}
+
+.topInputsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* outline: red 3px solid; */
+    width: 50%;
+
+}
+
+.topButtons {
+    display: flex;
+    gap: 40px;
+}
+
+.saveIconSpacing {
+    margin-right: 5px;
+    ;
+}
+
+.addItemContainer {
+    margin-top: 30px;;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}

@@ -1,0 +1,124 @@
+{
+  "invoices": [
+    {
+      "invoiceNumber": "1234234",
+      "createdDate": "1970-01-01T00:00:00.000Z",
+      "validUntilDate": "1970-01-01T00:00:00.000Z",
+      "items": [
+        {
+          "name": "",
+          "amount": 1,
+          "tax": 0,
+          "price": 0
+        },
+        {
+          "name": "",
+          "amount": "122",
+          "tax": "02",
+          "price": 0
+        }
+      ],
+      "sender": {
+        "companyName": "111",
+        "city": "",
+        "street": "",
+        "postCode": "",
+        "nip": "",
+        "tel": "",
+        "email": "123@ad.co",
+        "bankAccount": ""
+      },
+      "receiver": {
+        "companyName": "",
+        "city": "",
+        "street": "",
+        "postCode": "",
+        "nip": "",
+        "tel": "",
+        "email": "123@ad.co",
+        "bankAccount": ""
+      },
+      "id": 2
+    },
+    {
+      "invoiceNumber": "457888888000",
+      "createdDate": "2024-01-02T23:00:00.000Z",
+      "validUntilDate": "2024-01-18T23:00:00.000Z",
+      "items": [
+        {
+          "name": "testtesttesttest",
+          "amount": 1,
+          "tax": 0,
+          "price": 0
+        },
+        {
+          "name": "testtesttesttesttesttest",
+          "amount": 1,
+          "tax": 0,
+          "price": 0
+        }
+      ],
+      "sender": {
+        "companyName": "test",
+        "city": "test",
+        "street": "test",
+        "postCode": "test",
+        "nip": "test",
+        "tel": "test",
+        "email": "test@",
+        "bankAccount": "test"
+      },
+      "receiver": {
+        "companyName": "",
+        "city": "",
+        "street": "",
+        "postCode": "",
+        "nip": "",
+        "tel": "",
+        "email": "",
+        "bankAccount": ""
+      },
+      "id": 3
+    },
+    {
+      "invoiceNumber": "234234234234",
+      "createdDate": "1970-01-01T00:00:00.000Z",
+      "validUntilDate": "1970-01-01T00:00:00.000Z",
+      "items": [
+        {
+          "name": "testetstewst",
+          "amount": 1,
+          "tax": 0,
+          "price": 0
+        },
+        {
+          "name": "teststst",
+          "amount": 1,
+          "tax": 0,
+          "price": 0
+        }
+      ],
+      "sender": {
+        "companyName": "234234",
+        "city": "234",
+        "street": "",
+        "postCode": "",
+        "nip": "",
+        "tel": "234234",
+        "email": "123@EWRW.DC",
+        "bankAccount": "234234234"
+      },
+      "receiver": {
+        "companyName": "",
+        "city": "",
+        "street": "",
+        "postCode": "",
+        "nip": "234234",
+        "tel": "",
+        "email": "123@EWRW.DC",
+        "bankAccount": "234234"
+      },
+      "id": 4
+    }
+  ]
+}
